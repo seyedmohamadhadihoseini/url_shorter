@@ -7,13 +7,13 @@ import { Toaster } from '@/components/ui/toaster';
 export default function Home() {
   return (
     <Provider store={store}>
-      <form className='main-content'>
+      <div className='main-content'>
         <div>
         <InputPart />
         <OutputPart />
 
         </div>
-      </form>
+      </div>
       <Toaster />
     </Provider>
   );

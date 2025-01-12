@@ -18,6 +18,7 @@ export default function InputPart() {
         onClick={() => {
             SetNewUrl(url).then(newPathUrl => {
                 if(newPathUrl){
+                    console.log("has most");
                     dispatch(ChangeOutput(newPathUrl))
                 }else{
                     toast({
